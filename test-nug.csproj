@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>test_nug</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="32.0.1" />
+    <PackageReference Include="Microsoft.Aspnetcore.cryptography.keyderivation" Version="8.0.4" />
+    <PackageReference Include="Microsoft.Aspnetcore.openapi" Version="8.0.4" />
+    <PackageReference Include="Microsoft.entityframeworkcore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.entityframeworkcore.abstractions" Version="8.0.4" />
+    <PackageReference Include="Microsoft.entityframeworkcore.design" Version="8.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.entityframeworkcore.relational" Version="8.0.4" />
+    <PackageReference Include="Microsoft.extensions.apidescription.server" Version="8.0.4">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.openapi" Version="1.6.14" />
+    <PackageReference Include="npgsql" Version="8.0.2" />
+    <PackageReference Include="npgsql.entityframeworkcore.postgresql" Version="8.0.2" />
+    <PackageReference Include="swashbuckle.aspnetcore" Version="6.5.0" />
+    <PackageReference Include="system.codedom" Version="8.0.0" />
+    <PackageReference Include="system.memory" Version="4.5.5" />
+    <PackageReference Include="system.text.json" Version="8.0.3" />
+  </ItemGroup>
+
+</Project>

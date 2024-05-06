@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/laurent/Documents/Project/MBDA/test-nug/test-nug.csproj": {}
+  },
+  "projects": {
+    "/home/laurent/Documents/Project/MBDA/test-nug/test-nug.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/laurent/Documents/Project/MBDA/test-nug/test-nug.csproj",
+        "projectName": "test-nug",
+        "projectPath": "/home/laurent/Documents/Project/MBDA/test-nug/test-nug.csproj",
+        "packagesPath": "/home/laurent/.nuget/packages/",
+        "outputPath": "/home/laurent/Documents/Project/MBDA/test-nug/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/laurent/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[32.0.1, )"
+            },
+            "Microsoft.Aspnetcore.cryptography.keyderivation": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Aspnetcore.openapi": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.entityframeworkcore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.entityframeworkcore.abstractions": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.entityframeworkcore.design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.entityframeworkcore.relational": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.extensions.apidescription.server": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.openapi": {
+              "target": "Package",
+              "version": "[1.6.14, )"
+            },
+            "npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "npgsql.entityframeworkcore.postgresql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "swashbuckle.aspnetcore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "system.codedom": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "system.memory": {
+              "target": "Package",
+              "version": "[4.5.5, )"
+            },
+            "system.text.json": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/241/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
