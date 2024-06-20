@@ -23,10 +23,19 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="microsoft.net.illink.tasks" Version="8.0.4" />
     <PackageReference Include="Microsoft.openapi" Version="1.6.14" />
     <PackageReference Include="npgsql" Version="8.0.2" />
     <PackageReference Include="npgsql.entityframeworkcore.postgresql" Version="8.0.2" />
-    <PackageReference Include="swashbuckle.aspnetcore" Version="6.5.0" />
+    <PackageReference Include="NUnit" Version="4.1.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="4.2.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="swashbuckle.aspnetcore" Version="6.6.2" />
+    <PackageReference Include="swashbuckle.aspnetcore.swagger" Version="6.6.2" />
+    <PackageReference Include="swashbuckle.aspnetcore.swaggergen" Version="6.6.2" />
+    <PackageReference Include="swashbuckle.aspnetcore.swaggerui" Version="6.6.2" />
     <PackageReference Include="system.codedom" Version="8.0.0" />
     <PackageReference Include="system.memory" Version="4.5.5" />
     <PackageReference Include="system.text.json" Version="8.0.3" />
