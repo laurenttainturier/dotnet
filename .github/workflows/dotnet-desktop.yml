@@ -26,7 +26,7 @@ jobs:
         dotnet-version: 8.0.x
 
     - name: Archive nuget dependencies
-      run: dir /s ${{ github.workspace }}/.nuget/packages
+      run: dir /s ${{ github.workspace }}
 
     - name: Archive nuget dependencies
       uses: actions/upload-artifact@v4
