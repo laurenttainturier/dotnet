@@ -27,3 +27,9 @@ jobs:
 
     - name: Nuget packages
       run: echo $NUGET_PACKAGES
+
+    - name: Archive nuget dependencies
+      uses: actions/upload-artifact@v4
+      with:
+        name: nuget packages
+        path: $NUGET_PACKAGES/**/*.nupkg
