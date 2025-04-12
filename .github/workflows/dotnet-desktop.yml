@@ -42,5 +42,5 @@ jobs:
         git config user.email "github-actions@github.com"
         git add ./packages-github/*.nupkg
         git commit -m "Add nuget dependencies" || echo "Nothing to do"
-        git push
-        
+        git push origin HEAD:${GITHUB_HEAD_REF}
+  
