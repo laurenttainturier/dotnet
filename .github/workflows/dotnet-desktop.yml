@@ -1,0 +1,46 @@
+name: .NET Core Desktop
+
+on:
+  push:
+    paths: 
+      - test-nug.csproj
+  pull_request:
+    branches: 
+      - master
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Debug]
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Create nuget packages directory
+      run: mkdir -p ./nuget-deps
+
+    - name: Restore dotnet packages
+      run: dotnet restore --packages ./nuget-deps
+
+    - name: Copy packages 
+      run: |
+        mkdir -p ./packages-github
+        find ./nuget-deps -name "*.nupkg" -print -exec cp {} ./packages-github/ \;
+
+    - name: Commit nupkg files
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git add ./packages-github/*.nupkg
+        git commit -m "Add nuget dependencies" || echo "Nothing to do"
+        git push origin HEAD:${GITHUB_HEAD_REF}
+  
